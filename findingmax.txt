@@ -1,0 +1,9 @@
+addi x9, x0, 1000
+addi x18, x0, 1004
+lw x10, 0(x9)
+lw x11, 0(x18)
+bge x10, x11, yes
+jal x0, no
+yes:add x11, x0, x10
+no:ebreak
+
